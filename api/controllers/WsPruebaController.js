@@ -26,6 +26,7 @@ module.exports = {
     clientWS.addParamSync("cedula", "1026145787");
     var user = clientWS.obtenerStringSync("consultaPersonaMares", "6aaa5e631067cdda423396987f54f9df96625150");
     sails.log.debug(user);
+    console.log(user+"-----------------------------");
     return res.homepage({"usuario": user});
   }
 
